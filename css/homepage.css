@@ -1,0 +1,153 @@
+body{
+    font-family: Arial,Helvetic,sans-serif;
+    font-size: 20px;
+    line-height: 1.5;           /*------行高------*/
+    background-color: #ddf4e2;
+}
+/*global*/
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden ;
+}
+
+
+.button_1{
+    height: 38px;
+    background: #e8491d;
+    border:0;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+ul{
+    margin:0;
+    padding:0;
+}
+
+
+/*Header **/
+header{
+    background: rgba(27, 20, 7, 0.98);
+    color:#ffffff;
+    padding-top: 30px;
+    min-height: 100px;     /*段落最後一段 間距*/
+    border-bottom: #e8491d 3px solid;
+}
+
+
+header a{
+    background: rgba(27, 20, 7, 0.98);
+    color: #ffffff;
+    text-decoration: none;  /*底部無底線*/
+    text-transform: uppercase; /*大寫修定  */
+    font-size:16px;
+}
+
+
+
+header li{
+    float:left;
+    display:inline;
+    padding:0 100px 0 100px ;/* 重要!!!!top rigt botton left --設定這三個element 的距離*/
+
+}
+
+header #logo {
+    float:left;
+
+}
+
+header #logo h1 {
+    margin: 0;
+}
+
+header nav{
+    float:right;
+    margin-top:10px;
+
+}
+
+header .highlight, header .current a{
+    color:#e8491d;
+    font-weight:bold;
+}
+
+header .about1 a{
+    color:yellowgreen;
+    font-weight:bold;
+}
+
+/*showcase*/
+#shortcase{
+    min-height:400px;
+    background: url('../img/4.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    text-align: center;
+    color:black;
+    font-style: oblique;
+
+}
+
+
+
+
+#shortcase h1{
+    margin-top:100px;
+    font-size: 55px;
+    margin-bottom:10px;
+}
+
+#shortcase p{
+    font-size: 20px;
+    color:red;
+}
+
+#newsletter{
+    padding: 15px;
+    color:#ffffff;
+    background: #f630c6;
+}
+/*newsletter*/
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin: 15px;
+
+}
+
+
+#newsletter input[type="email"]{
+    padding:10px;
+    font-size: 15px;
+}
+/*boxes*/
+
+#boxes{
+    margin-top:20px;
+
+}
+
+#boxes .box{
+  float: left;
+    text-align: center;
+    width:30%;
+    padding:10px;
+
+}
+#boxes.box img{
+    width: 20%;
+}
+
+footer{
+    background:violet ;
+    color:black;
+    border-top: solid red 2px;
+    font-style: oblique;
+    text-align: center;
+
+}
