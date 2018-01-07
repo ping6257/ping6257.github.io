@@ -1,0 +1,114 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+section {
+    background:black;
+    background-size: cover;
+    width: 100%;
+    height: 1500px;
+    position: relative;
+    overflow: hidden; /*溢出框架*/
+}
+
+
+.snow1{
+    background-image:url('../img/snow1.png');
+    background-repeat: repeat;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+   animation:animate1 10s infinite  linear; /*name duration  iteration-count(迭代次數) time-direction */
+}
+
+.snow2{
+    background-image:url('../img/snow3.png');
+    background-repeat: repeat;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    animation:animate2 20s infinite  linear; /*name duration  iteration-count(迭代次數) time-direction */
+}
+
+
+.snow3{
+    background-image:url('../img/snow2.png');
+    background-repeat: repeat;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    animation:animate3 15s infinite  linear; /*name duration  iteration-count(迭代次數) time-direction */
+}
+
+
+
+@keyframes animate1{
+    0%  {background-position: 0 0}
+    100%{background-position:100px 650px}
+}
+
+@keyframes animate2{
+    0%  {background-position: 0 0}
+    100%{background-position:-100px 650px}
+}
+
+@keyframes animate3{
+    0%  {background-position: 0 0}
+    100%{background-position:0 650px}
+}
+
+
+.card{
+
+    background:white no-repeat;
+    background-size: cover;
+    width:500px;
+    height: 750px;
+
+    position: absolute;
+    left:40%;
+    top:20%;
+    transform-style:preserve-3d ;
+    color:black;
+    /*border generator*/
+
+
+
+
+}
+
+.card_top{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: url("../img/birthday_cards_with_cats1_downjpg.jpg") no-repeat;
+    background-size: 500px 750px;
+    transform-origin:0 50% ;
+    transition: all 1s ease-in;
+
+}
+
+
+.card:hover  .card_top{
+    transform:rotateY(-160deg);
+}
+
+
+
+.gift{
+    position:absolute;
+    top:75%;
+    left:80%;
+    font:20px oblique yellow ;
+
+}
+
+
+.gift_page
