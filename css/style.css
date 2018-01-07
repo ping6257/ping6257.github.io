@@ -1,0 +1,112 @@
+
+body{
+    padding-top:0;
+    margin-top:0;
+    line-height: 1.5;
+
+    font-family: Arial, "Times New Roman",sans-serif;
+}
+
+
+header{
+    background: white;
+    color: #dfe1ff;
+    padding:20px;
+    margin:0px;
+    border-bottom:10px yellow solid;
+}
+
+
+#logo{
+    font-family: 'Merienda', cursive;
+    font-size:40px;
+    text-align: center;
+}
+#logo h1{
+    font-family: 'Merienda', cursive;
+}
+
+.a1 {
+    border:solid 2px red;
+    padding:20px;
+    margin:70px;
+}
+
+
+header ul{
+    text-align: center;
+    display: flex;
+
+}
+
+header li{
+    font-size: 10px;
+    font-style: oblique;
+    margin-right:50px;
+
+}
+
+#wrapper {
+    width:100%;
+
+    margin:0px;
+    padding: 0px;
+    display: flex;
+    color:darkblue;
+}
+
+.wrapper1 {
+
+  flex:2;
+    border: 2px pink solid;
+
+}
+.layer{
+    height: 1000px;
+    width: 1000px;
+    margin:0px
+}
+
+.top{
+    background-size:100% 100%;
+    background-image: url("../img/Kasumi-Arimura-01.jpg");
+}
+
+.mid{
+    background-image:url("../img/gakki_02.jpg") ;
+    background-repeat:no-repeat ;
+    background-size:100% 100%;
+}
+
+.botton{
+    background-image: url("../img/Haruka.jpg");
+    background-repeat:no-repeat ;
+    background-size:100% 100%;
+}
+
+
+.wrapper2 {
+
+
+    flex: 1;
+    border: solid 2px yellow;
+    background-image: url("../img/Kasumi-Arimura-02.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+
+}
+
+.right {
+
+}
+
+
+
+
+
+footer{
+    position:relative;
+    bottom: 0px;
+    top:20px;
+}
+
