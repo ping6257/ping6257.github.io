@@ -9,48 +9,111 @@ body{
 
 
 header{
-    background: white;
+    background: #111441;
     color: #dfe1ff;
+    font-size: 50px;
     padding:20px;
-    margin:0px;
+    margin:0;
     border-bottom:10px yellow solid;
 }
+.top_menu{
+    display:flex;
 
-
-#logo{
-    font-family: 'Merienda', cursive;
-    font-size:40px;
-    text-align: center;
 }
+
+.navbar {
+   flex:1;
+
+    margin-left: 20px;
+}
+
+
+
+.menu_link{
+    flex:95;
+}
+
+.menu_link a:hover{
+    background-color: yellow;
+    color:red;
+}
+
+.top_menu li{
+    display: inline-block;
+    text-decoration: none;
+    margin-right:150px;
+
+}
+
+a{
+    text-decoration: none;
+}
+
 #logo h1{
-    font-family: 'Merienda', cursive;
+    color: turquoise;
+
+    font-size: 50px;
 }
 
-.a1 {
-    border:solid 2px red;
-    padding:20px;
-    margin:70px;
-}
-
-
-header ul{
+#logo p{
+    color: salmon;
     text-align: center;
-    display: flex;
+    font-size: 25px;
 
 }
 
-header li{
-    font-size: 10px;
+#side_menu{
+
+    border: solid 2px black;
+}
+
+.side_box{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#111;
+    opacity: 0.8;
+    overflow-x:hidden ;           /**關鍵  隱藏overflow 文字  */
+    padding-top:250px ;
+    transition: 0.5s;
+}
+
+
+.side_box a{
+   padding:10px 10px 10px 10px;  /*top right b l*/
+   text-decoration: none;
+    font-size: 25px;
     font-style: oblique;
-    margin-right:50px;
+   color:white;
+    display:block;
+
+
 
 }
+
+
+
+#main{
+    color: #ffffff;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+
+
+/*------------------  section  --------------*/
+
+
+
 
 #wrapper {
     width:100%;
 
-    margin:0px;
-    padding: 0px;
+    margin:0;
+    padding: 0;
     display: flex;
     color:darkblue;
 }
@@ -64,7 +127,7 @@ header li{
 .layer{
     height: 1000px;
     width: 1000px;
-    margin:0px
+    margin:0;
 }
 
 .top{
@@ -74,7 +137,7 @@ header li{
 
 .mid{
     background-image:url("../img/gakki_02.jpg") ;
-    background-repeat:no-repeat ;
+    background-repeat:no-repeat;
     background-size:100% 100%;
 }
 
@@ -106,7 +169,7 @@ header li{
 
 footer{
     position:relative;
-    bottom: 0px;
+    bottom: 0;
     top:20px;
 }
 
