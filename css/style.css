@@ -8,13 +8,17 @@ body{
 }
 
 
-header{
-    background: #111441;
+header  {
+    background: gray;
+
+
     color: #dfe1ff;
     font-size: 50px;
     padding:20px;
     margin:0;
     border-bottom:10px yellow solid;
+
+
 }
 .top_menu{
     display:flex;
@@ -37,6 +41,10 @@ header{
     background-color: yellow;
     color:red;
 }
+
+
+
+
 
 .top_menu li{
     display: inline-block;
@@ -87,7 +95,7 @@ a{
    text-decoration: none;
     font-size: 25px;
     font-style: oblique;
-   color:white;
+    color:white;
     display:block;
 
 
@@ -101,6 +109,55 @@ a{
     font-size: 20px;
     font-style: oblique;
 }
+
+
+#navigate_box {
+    margin: 0px;
+    padding:0px;
+    list-style: none;
+    margin-left: 200px;
+
+  =
+}
+
+
+
+#navigate_box li{
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    background-color: black;
+    opacity: 0.6;
+    line-height: 50px;
+    font-size: 20px;
+    margin-left:50px ;
+}
+
+
+
+#navigate_box li a{
+    text-decoration: none;
+    color:white;
+    display:block;
+    font-family: Arial;
+    text-align: center;
+}
+
+#navigate_box li a:hover{
+
+    background-color: red;
+
+}
+#navigate_box li ul li{
+    display: none;
+}
+
+#navigate_box li:hover ul li{
+    display: block;
+
+
+}
+
 
 
 
