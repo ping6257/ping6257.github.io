@@ -1,29 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
-
-    <form name="contact">  
-        <input name="email" type="email" placeholder="Email" required>  
-        <button type="submit">Send</button>  
-       </form>  
-
-       
-       <script>  
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyotRlxZ3l0gOHfDoYc6CGoyj5cGCVHHhQZ4O9snHYs69Vmf2Y/exec'  ;
-        const form = document.forms['contact']  
-        form.addEventListener('submit', e => {  
-         e.preventDefault()  
-         fetch(scriptURL, { method: 'POST', body: new FormData(form)})  
-          .then(response => console.log('Success!', response))  
-          .catch(error => console.error('Error!', error.message))  
-        })  
-       </script>  
-  
-</body>
-</html>
+<form name="contact">  
+  <form name="submit-to-google-sheet">  
+    <input name="email" type="email" placeholder="Email" required>  
+    <input name="firstName" type="text" placeholder="First Name">  
+    <input name="lastName" type="text" placeholder="Last Name">  
+    <button type="submit">Send</button>  
+   </form>  
+ </form>  
+ <script>  
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzbeT6N-Q3flV66F8zgdCzTxdELTTm49Gluo5sWqhbRqpvFBfo/exec'  
+  const form = document.forms['contact']  
+  form.addEventListener('submit', e => {  
+   e.preventDefault()  
+   fetch(scriptURL, { method: 'POST', body: new FormData(form)})  
+    .then(response => console.log('Success!', response))  
+    .catch(error => console.error('Error!', error.message))  
+  })  
+ </script>  
