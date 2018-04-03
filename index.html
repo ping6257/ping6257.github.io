@@ -1,18 +1,79 @@
-<form name="contact">  
-  <form name="submit-to-google-sheet">  
-    <input name="email" type="email" placeholder="Email" required>  
-    <input name="firstName" type="text" placeholder="First Name">  
-    <input name="lastName" type="text" placeholder="Last Name">  
-    <button type="submit">Send</button>  
-   </form>  
- </form>  
- <script>  
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzbeT6N-Q3flV66F8zgdCzTxdELTTm49Gluo5sWqhbRqpvFBfo/exec'  
-  const form = document.forms['contact']  
-  form.addEventListener('submit', e => {  
-   e.preventDefault()  
-   fetch(scriptURL, { method: 'POST', body: new FormData(form)})  
-    .then(response => console.log('Success!', response))  
-    .catch(error => console.error('Error!', error.message))  
-  })  
- </script>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To my dear sister~</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+
+
+
+</head>
+
+
+
+
+<body>
+
+
+<audio autoplay="true"  src="music/SAO.mp3"></audio>
+
+
+   <section>
+   <header>
+
+       <p> hi sister </p>
+   </header>
+       <div class="snow">
+           <div class="snow1"></div>
+           <div class="snow2"></div>
+           <div class="snow3"></div>
+       </div>
+
+
+
+
+       <div  id="card_button">
+
+
+
+           <!--卡片封面-->
+           <div class="card_top">
+
+           </div>
+
+           <!--mid page-->
+           <div id="card_mid">
+           <span> Hi~學姊 <br> &nbsp;&nbsp;&nbsp;&nbsp; 拉拉拉</span>
+           </div>
+
+           <div id="buttonclick" >  </div>
+
+           <!--button page-->
+           <p class="down include"> hello sister</p>
+           <div id="closebutton">        </div>
+
+
+
+
+       </div>
+
+
+
+
+       <div class="gift" >
+           <a href="index3.html" class="btn btn-dark btn-block" id="botton">姊姊~禮物按這裡唷!</a>
+
+
+       </div>
+
+
+
+   </section>
+<script src="js/main.js"></script>
+
+
+</body>
+
+</html>

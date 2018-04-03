@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <audio autoplay="true"  src="music/song1.mp3"></audio>
+<!----
+<div class="form">
+<form name="contact">
+  <form name="submit-to-google-sheet" >
+    <input name="email"     type="email"placeholder="Email" required>
+    <input name="firstName" type="text" placeholder="First Name">
+    <input name="lastName"  type="text" placeholder="Last Name">
+    <input name="message"   type="text" placeholder="姊姊我很厲害唄! 有沒有想說什麼話給小弟我呢?" >
+    <button type="submit">Send</button>
+   </form>
+ </form>
+</div>
+-->
+
+<div class="inner contact" >
+    <!-- Form Area -->
+    <div class="contact-form">
+        <!-- Form -->
+        <form id="contact-us" method="post" action="#" name="contact">
+           <form name="submit-to-google-sheet">
+            <!-- Left Inputs -->
+            <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+                <!-- Name -->
+                <input type="text"  name="name" id="name" required="required" class="form" placeholder="Name" />
+                <!-- Email -->
+                <input type="text"  name="address" id="mail" required="required" class="form" placeholder="hihi">
+                <!-- Subject -->
+                <input type="text"  name="subject" id="subject"  class="form" placeholder="Subject" />
+            </div><!-- End Left Inputs -->
+            <!-- Right Inputs -->
+            <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+                <!-- Message -->
+                <textarea name="message" id="message" class="form textarea"  placeholder="姊姊我很厲害齁! 有沒有想說什麼話給小弟我呢?"></textarea>
+            </div><!-- End Right Inputs -->
+            <!-- Bottom Submit -->
+            <div class="relative fullwidth col-xs-12">
+                <!-- Send Button -->
+
+                <button type="submit" id="submit" name="submit" class="form-btn semibold">Send Message</button>
+
+            </div><!-- End Bottom Submit -->
+            <!-- Clear -->
+            <div class="clear"></div>
+
+           </form>
+        </form>
+        <!-- Your Mail Message -->
+        <div class="mail-message-area">
+            <!-- Message -->
+            <div class="alert gray-bg mail-message not-visible-message">
+                <strong>Thank You !</strong> Your email has been delivered.
+            </div>
+        </div>
+
+    </div><!-- End Contact Form Area -->
+</div><!-- End Inner -->
+
+
+
+<footer>
+    <div class="footer">
+        <a href="index.html" class="btn btn-outline-primary"  id="Card_page">  Card page~ </a>
+        <a href="index3.html" class="btn btn-outline-success" id="Reload_page">Gift page</a>
+    </div>
+</footer>
+
+<div id="button_text">
+   <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddd</p>
+
+</div>
+
+<script >
+    document.getElementById('subject').value = localStorage.getItem("savegift");
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzbeT6N-Q3flV66F8zgdCzTxdELTTm49Gluo5sWqhbRqpvFBfo/exec'  ;
+  const form = document.forms['contact']  ;
+    form.addEventListener('submit', e => {
+    e.preventDefault()  ;
+     fetch(scriptURL, { method: 'POST', body: new FormData(form)})  
+    .then (response => console.log('Success!', response))  
+    .catch(error => console.error('Error!', error.message));  
+
+    document.getElementById('button_text').style.display="inline";    
+ 
+    
+   
+
+
+
+
+
+  })
+ //get gift choose
+
+
+
+
+
+
+ </script>
+
+
+
+</body>
+</html>
