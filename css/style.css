@@ -1,0 +1,27 @@
+.section-search{
+  padding: 5px !important;
+  font-size:17px !important;
+  border:white 2px solid !important;
+}
+
+h4{
+  font:bolder;
+}
+
+
+
+.section-follow .fa-5x{
+  margin:10px 20px;
+}
+
+.col p{
+  font:30px black bolder !important;
+}
+
+.materialboxed{
+   max-height:500px;
+   max-width:500px;
+  
+}
+
+.material-icons.md-18 { font-size: 58px; }
