@@ -1,0 +1,185 @@
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+.wrapper{
+    
+    height:800px;
+    border: white 0.1px solid;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slide 40s infinite  ;
+    background-color: black;
+    
+}
+
+@keyframes slide{
+    0%{background-image:  url("../photo/sister8.JPG");     }/* background-size: contain*/
+    10%{background-image: url("../photo/sister7.JPG");    }
+    20%{background-image: url("../photo/sister9.JPG");    }
+    30%{background-image: url("../photo/sister6.JPG");     }
+
+    40%{background-image: url("../photo/sister4.JPG");     }
+    50%{background-image: url("../photo/sister1new.JPG");       }
+    60%{background-image: url("../photo/sister12.JPG");    }
+    70%{background-image: url("../photo/sister11new.JPG");    }
+    80%{background-image: url("../photo/sister3.JPG");    }
+    90%{background-image: url("../photo/sister5c2.JPG");     }
+    100%{background-image: url("../photo/sister_end.JPG"); }
+}
+
+audio{
+    display: none;
+}
+
+
+
+
+.contact-form{
+    background: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 83, 175));
+    opacity: 0.8;
+    margin-top :120px;
+    margin-left: 300px;
+    width: 800px;
+    height: 400px;
+    border-radius:20px ;
+}
+
+
+#contact{
+    padding:10px 0 10px;
+}
+
+.contact-text{
+    margin:45px auto;
+
+}
+
+.mail-message{
+    width: 100%;
+    background:rgba(255,255,255, 0.8) !important;
+    transition: all 0.7s;
+    margin:0 auto;
+    border-radius: 0;
+}
+
+.not-visible-message{
+    height:0;
+    opacity: 0;
+}
+
+.visible-message{
+    height:auto;
+    opacity: 1;
+    margin:25px auto 0;
+}
+
+/* Input Styles */
+
+.form{
+    width: 100%;
+    padding: 15px;
+    margin-top:  20px;
+    background:#f8f8f8;
+    border:1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom:25px;
+    color:#727272 !important;
+    font-size:13px;
+    transition: all 0.4s;
+}
+
+.form:hover{
+    border:1px solid #8BC3A3;
+}
+
+.form:focus{
+    color: white;
+    outline: none;
+    border:1px solid #8BC3A3;
+}
+
+.textarea{
+    height: 200px;
+    max-height: 200px;
+    max-width: 350px;
+}
+
+/* Generic Button Styles */
+
+.button{
+    padding:8px 12px;
+    background:#0A5175;
+    display: block;
+    width:120px;
+    margin:10px 0 0 0;
+    border-radius:3px;
+    transition: all 0.3s;
+    text-align:center;
+    font-size:0.8em;
+    box-shadow: 0 1px 4px rgba(0,0,0, 0.10);
+
+}
+
+.button:hover{
+    background:#8BC3A3;
+    color:white;
+}
+
+/* Send Button Styles */
+
+.form-btn{
+    width:180px;
+    display: block;
+    height: auto;
+    padding:15px;
+    color:#fff;
+    background:rgb(34, 18, 177);
+    border:none;
+    border-radius:3px;
+    outline: none;
+    transition: all 0.3s;
+    margin:auto;
+    box-shadow: 0 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0, 0.10);
+    font-size:12px;
+}
+
+.form-btn:hover{
+    background:#111;
+    color: white;
+    border:none;
+}
+
+.form-btn:active{
+    opacity: 0.9;
+}
+center{
+    margin-top:330px;
+}
+input {
+    position: relative;
+    z-index: 9999;
+}
+
+.footer{
+    position: relative;
+    left:25%;
+    display: grid;
+    grid-template-columns:50% 50% ;
+    grid-column-gap: 2em;
+    width:700px
+}
+
+
+#button_text{
+    
+    position: relative;
+    width:780px;
+    left: 25%;
+    font-family: 'Noto Sans TC', sans-serif;
+    color:gold;
+    font-size:25px;
+}
+
+
+    
