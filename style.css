@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
+.navbar-fixed{
+  padding:0px;
+}
+.brand-logo{
+  font-family: 'Nanum Pen Script', cursive !important;
+  font-size:30px;
+}
+.card-title{
+  font-family: 'Nanum Pen Script', cursive !important;
+  font-size:30px;
+
+}
+
+.card-content {
+  
+  font-family: 'Nanum Pen Script', cursive !important;
+  font-size:30px;
+
+}
+
