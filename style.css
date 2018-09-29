@@ -1,22 +1,143 @@
+body{
+background:rgba(0, 0, 0, 0);
+margin:0;
+color:black;
 
-@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
-.navbar-fixed{
-  padding:0px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.brand-logo{
-  font-family: 'Nanum Pen Script', cursive !important;
-  font-size:30px;
+.showcase::after{
+  position: absolute;
+  top:0;
+
+  content:"";
+  padding: 0;
+
+  height: 100vh;
+  width:100vw;
+  background-image: url("pages/Coast_Houses_Canada_Lake_481500.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: center;
+  display: block;
+  filter: blur(10px) grayscale(10%);
+  -webkit-filter: blur(1px) grayscale(90%);
+  transition: all 0.25s 
 }
-.card-title{
-  font-family: 'Nanum Pen Script', cursive !important;
-  font-size:30px;
+.container{
+  position: absolute;
+  left:45vw;
+  top:10vh;
+  bottom:5vh;
+
+}
+#card{
+  position: absolute;
+
+  width:20vw;
+  height:75vh ; 
+ 
 
 }
 
-.card-content {
+.page{
+  /* background-image: url('pages/01.JPG'); */
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height:100%;
   
-  font-family: 'Nanum Pen Script', cursive !important;
-  font-size:30px;
-
+  z-index:7;
+  transition: all 1s ;
+  transform-origin:0 ;
+  border-radius: 4px;
+  
+  
+}
+/* page z-index */
+.page1{
+  background-image: url("pages/letter.jpg");
+  z-index:6;
+}
+.page2{
+  /* background-image: url('pages/02.jpg'); */
+  background-image: url("pages/letter.jpg");
+  z-index:5;
+}
+.page3{
+  /* background-image: url('pages/03.jpg');
+   */
+   background-image: url("pages/letter.jpg");
+   z-index:4;
+}
+.page4{
+  /* background-image: url('pages/03.jpg');
+   */
+   background-image: url("pages/letter.jpg");
+   z-index:3;
+}
+.page5{
+  /* background-image: url('pages/03.jpg');
+   */
+   background-image: url("pages/letter.jpg");
+   z-index:2;
+}
+.page6{
+  /* background-image: url('pages/03.jpg');
+   */
+   background-image: url("pages/letter.jpg");
+   z-index:1;
 }
 
+/* inverse z-index */
+.inverse1{
+  z-index:1;
+  background-image:url("pages/5.JPG") !important
+}
+.inverse2{
+  z-index:2;
+  background-image:url("pages/5.JPG") !important
+}
+.inverse3{
+  z-index:3;
+  background-image:url("pages/5.JPG") !important
+}
+.inverse4{
+  z-index:4;
+  background-image:url("pages/5.JPG") !important
+}
+.inverse5{
+  z-index:5;
+  background-image:url("pages/5.JPG") !important
+}
+.inverse6{
+  z-index:6;
+  background-image:url("") !important
+}
+
+
+/* photoshow_here */
+.photoshow{
+  position: relative;
+  left:5vw;
+  top:5vh;
+  width:150px;
+  height:150px;
+  background-image: url(pages/1.JPG);
+  background-size:contain;
+  background-repeat: no-repeat;
+
+}
+.photoshow2{
+  position: relative;
+  left:5vw;
+  top:5vh;
+  width:150px;
+  height:150px;
+  background-image: url(pages/8.JPG);
+  background-size:contain;
+  background-repeat: no-repeat;
+
+}
